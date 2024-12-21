@@ -6,10 +6,14 @@ best practices that we have developed over time. It is possible that open source
 projects or other organizations would benefit from this knowledge, so we work to
 make it available publicly when possible.
 
+Google 有許多通用的工程實踐，涵蓋所有語言和所有專案。這些文件代表了我們長期以來發展的各種最佳實踐的集體經驗。開源專案或其他組織可能會從這些知識中受益，因此我們努力在可能的情況下將其公開
+
 Currently this contains the following documents:
 
+目前包含以下文件：
+
 *   [Google's Code Review Guidelines](review/index.md), which are actually two
-    separate sets of documents:
+    separate sets of documents(實際上是由兩個獨立的文件組成):
     *   [The Code Reviewer's Guide](review/reviewer/index.md)
     *   [The Change Author's Guide](review/developer/index.md)
 
