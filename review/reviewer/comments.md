@@ -1,15 +1,15 @@
-# How to write code review comments
+# How to write code review comments ( 如何撰寫code review　評論 )
 
 
 
 ## Summary
 
--   Be kind.
--   Explain your reasoning.
+-   Be kind.( 友善一點。 )
+-   Explain your reasoning. ( 解釋你的推理、理由 )
 -   Balance giving explicit directions with just pointing out problems and
-    letting the developer decide.
+    letting the developer decide. ( 在給予明確指示與僅指出問題並讓開發人員決定之間取得平衡。 )
 -   Encourage developers to simplify code or add code comments instead of just
-    explaining the complexity to you.
+    explaining the complexity to you. ( 鼓勵開發人員簡化程式碼或添加程式碼註釋，而不是僅僅向您解釋複雜性。 )
 
 ## Courtesy
 
