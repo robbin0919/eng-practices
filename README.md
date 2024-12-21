@@ -22,11 +22,19 @@ Currently this contains the following documents:
 There is some Google-internal terminology used in some of these documents, which
 we clarify here for external readers:
 
+其中一些文件中使用了一些 Google 內部術語，我們在此為外部讀者進行澄清：
+
 *   **CL**: Stands for "changelist", which means one self-contained change that
     has been submitted to version control or which is undergoing code review.
     Other organizations often call this a "change", "patch", or "pull-request".
+    
+    **CL**: 代表 “changelist”，這表示已提交給版本控製或正在接受程式碼審查的一項獨立修改。其他組織通常稱之為 “change”、”patch” 或 “pull-request”。
+    
 *   **LGTM**: Means "Looks Good to Me". It is what a code reviewer says when
     approving a CL.
+    
+    **LGTM**: 意思是 "Looks Good to Me"(我覺得不錯). 這是code reviewer 在批准 CL 時所說的話。
+
 
 ## License
 
