@@ -1,8 +1,8 @@
-# How to write code review comments ( 如何撰寫code review　評論 )
+# How to write code review comments ( 如何撰寫 code review 評論 )
 
 
 
-## Summary
+## Summary ( 摘要  )
 
 -   Be kind.( 友善一點。 )
 -   Explain your reasoning. ( 解釋你的推理、理由 )
@@ -11,7 +11,7 @@
 -   Encourage developers to simplify code or add code comments instead of just
     explaining the complexity to you. ( 鼓勵開發人員簡化程式碼或添加程式碼註釋，而不是僅僅向您解釋複雜性。 )
 
-## Courtesy
+## Courtesy ( 禮貌 )
 
 In general, it is important to be
 [courteous and respectful](https://chromium.googlesource.com/chromium/src/+/master/docs/cr_respect.md)
