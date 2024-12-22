@@ -58,6 +58,8 @@ include this information in your review comments, but sometimes it's appropriate
 to give a bit more explanation around your intent, the best practice you're
 following, or how your suggestion improves code health.
 
+關於上面的「較佳的範例」，您會注意到的一件事是，它可以幫助開發者理解您發表評論的原因。您並不總是需要在審閱意見中包含此信息，但有時適當地對您的意圖、遵循的最佳實踐或建議，如何改善程式碼健康狀況提供更多解釋。 
+
 ## Giving Guidance ( 給予引導 ) {#guidance}
 
 **In general it is the developer's responsibility to fix a CL, not the
