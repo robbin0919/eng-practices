@@ -161,9 +161,14 @@ that should usually result in them **rewriting the code more clearly**.
 Occasionally, adding a comment in the code is also an appropriate response, as
 long as it's not just explaining overly complex code.
 
+如果您要求開發人員解釋一段您不理解的程式碼，通常會導致他們更清楚地重寫程式碼。有時，在程式碼中加入註解也是一種適當的回應，只要它不只是解釋過於複雜的程式碼。
+
 **Explanations written only in the code review tool are not helpful to future
 code readers.** They are acceptable only in a few circumstances, such as when
 you are reviewing an area you are not very familiar with and the developer
-explains something that normal readers of the code would have already known.
+explains something that normal readers of the code would have already known.  
+
+**僅在程式碼審查工具中編寫的解釋對未來的程式碼讀者沒有幫助。**
+它們僅在少數情況下是可接受的，例如當您正在審查您不太熟悉的領域並且開發人員解釋了程式碼的普通讀者已經知道的內容時。
 
 Next: [Handling Pushback in Code Reviews](pushback.md)
