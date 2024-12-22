@@ -121,6 +121,38 @@ This makes review intent explicit and helps authors prioritize the importance of
 various comments. It also helps avoid misunderstandings; for example, without
 comment labels, authors may interpret all comments as mandatory, even if some
 comments are merely intended to be informational or optional.
+ 
+這使得評論意圖明確，並幫助作者優先考慮各種評論的重要性。它還有助於避免誤解；例如，如果沒有評論標籤，作者可能會將所有評論解釋為強制性的，即使某些評論只是為了提供資訊或可選。  
+
+
+>筆記：
+> 在程式碼審查中，Nit、Optional (或 Consider)、FYI 這三個詞通常用來標記不同類型的評論，它們分別代表：  
+> Nit (小問題)  
+> 定義： 指的是程式碼中一個微小的、不影響程式功能，但可能影響可讀性、一致性或未來維護性的細節。例子：
+>  * 缺少分號  
+>  * 命名不一致
+>  * 空白格使用不規範
+>  * 註解不夠清楚
+>  特徵： 雖然是小問題，但累積起來會影響程式碼的整體品質。主要關注程式碼的細節和風格。
+>  可能會寫下以下評論 : 這行應該加一個空格。  
+>  
+>  Optional (或 Consider，建議考慮)
+> 定義： 指的是一個可以改進程式碼的建議，但不是必須的。例子：
+> * 可以用更簡潔的寫法  
+> * 可以使用更好的演算法
+> * 可以增加錯誤處理
+> * 可以添加註解來解釋某段複雜的邏輯
+> 特徵： 這類建議可以提高程式碼的效率、可讀性或健壯性，但不是必須的，開發者可以根據情況自行決定是否採納。提供改進的建議，但不是強制性的。
+> 可能會寫下以下評論 : 可以考慮使用字典來存儲這些數據，會更方便查找。    
+>
+> FYI (For Your Information，供參考)  
+> 定義： 指的是一些額外的資訊，供開發者參考，但不一定需要立即採取行動。例子：
+> * 這個函式在其他地方也有使用
+> * 這個變數的值可能會在未來改變
+> * 這個功能在特定情況下可能會出現問題
+>  特徵： 這類資訊可以幫助開發者更好地理解程式碼，但可能不直接影響當前的修改。 提供額外的資訊，供開發者參考。
+>  可能會寫下以下評論 : 這個函式在處理大數據集時可能會比較慢，可以考慮優化。  
+
 
 ## Accepting Explanations ( 接受解釋 ) {#explanations}
 
