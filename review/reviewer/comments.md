@@ -66,6 +66,8 @@ following, or how your suggestion improves code health.
 reviewer's.** You are not required to do detailed design of a solution or write
 code for the developer.
 
+**一般來說，修復 CL 是開發人員的責任，而不是審閱者的責任。**  您不需要為開發人員進行解決方案的詳細設計或編寫程式碼。
+
 This doesn't mean the reviewer should be unhelpful, though. In general you
 should strike an appropriate balance between pointing out problems and providing
 direct guidance. Pointing out problems and letting the developer make a decision
@@ -73,10 +75,15 @@ often helps the developer learn, and makes it easier to do code reviews. It also
 can result in a better solution, because the developer is closer to the code
 than the reviewer is.
 
+但這並不意味著審稿人應該沒有幫助。一般來說，您應該在指出問題和提供直接指導之間取得適當的平衡。
+指出問題並讓開發人員做出決定通常可以幫助開發人員學習、並使程式碼審查變得更容易。它還可以產生更好的解決方案，因為開發人員比審查人員更接近程式碼。 
+
 However, sometimes direct instructions, suggestions, or even code are more
 helpful. The primary goal of code review is to get the best CL possible. A
 secondary goal is improving the skills of developers so that they require less
 and less review over time.
+ 
+然而，有時直接的指示、建議、甚至程式碼會更有幫助。code review 的主要目標是獲得盡可能最好的 CL。次要個目標是提高開發人員的技能，以便隨著時間的推移，他們需要的審查越來越少。
 
 Remember that people learn from reinforcement of what they are doing well and
 not just what they could do better. If you see things you like in the CL,
@@ -84,22 +91,35 @@ comment on those too! Examples: developer cleaned up a messy algorithm, added
 exemplary test coverage, or you as the reviewer learned something from the CL.
 Just as with all comments, include [why](#why) you liked something, further
 encouraging the developer to continue good practices.
+ 
+請記住，人們透過強化自己做得好的事情來學習，而不僅僅是他們可以做得更好的事情。 如果您在 CL 中看到您喜歡的內容，也請發表評論！範例：開發人員清理了混亂的演算法，添加了示例性測試覆蓋率，或者您作為審閱者從 CL 中學到了一些東西。就像所有評論一樣，包括[為什麼](#為什麼)你喜歡某些東西，進一步鼓勵開發人員繼續良好的實踐。
 
 ## Label comment severity ( 標籤評論嚴重性 ) {#label-comment-severity}
 
 Consider labeling the severity of your comments, differentiating required
 changes from guidelines or suggestions.
+ 
+考慮標記您的評論的嚴重性，將所需的更改與指南或建議區分開來。
 
 Here are some examples:
 
 > Nit: This is a minor thing. Technically you should do it, but it won’t hugely
-> impact things.
->
+> impact things.  
+>這是個小問題。技術上來說你應該這樣做，但不會對整體產生重大影響。  
+>可以理解為一個微小的瑕疵，雖然應該修正，但不會造成嚴重後果.  
+> 
 > Optional (or Consider): I think this may be a good idea, but it’s not strictly
-> required.
+> required.  
+> 我認為這可能是一個好主意，但不是強制要求的。  
+> 可以理解為一個建議，可以採納也可以不採納，視情況而定。  
 >
 > FYI: I don’t expect you to do this in this CL, but you may find this
-> interesting to think about for the future.
+> interesting to think about for the future.  
+> 我不期望你在這個變更列表 (CL) 中處理這個，但你可能覺得未來考慮這個很有趣。  
+> 可以理解為提供一些額外的資訊，供開發者參考，但不屬於當前需要處理的範圍。  
+> 
+
+
 
 This makes review intent explicit and helps authors prioritize the importance of
 various comments. It also helps avoid misunderstandings; for example, without
