@@ -27,12 +27,30 @@ saying something that might otherwise be upsetting or contentious. For example:
 Bad: "Why did **you** use threads here when there's obviously no benefit to be
 gained from concurrency?"
 
+不佳的範例： "你為什麼要在這裡使用線程？顯然從concurrency（並發性）中得不到任何好處。"
+
 Good: "The concurrency model here is adding complexity to the system without any
 actual performance benefit that I can see. Because there's no performance
 benefit, it's best for this code to be single-threaded instead of using multiple
 threads."
 
-## Explain Why {#why}
+較佳的範例： "目前的concurrency（並發性）模型增加了系統的複雜性，但卻沒有看到任何實際的性能提升。由於沒有性能優勢，因此最好將此程式碼改為單線程，而不是使用多個線程。"
+
+筆記：
+
+更委婉: "在這個情況下使用線程似乎沒有帶來任何並發性的優勢，您能否說明一下這樣設計的原因呢?"
+
+解釋:
+
+這個句子直接指責開發人員使用了不必要的線程，可能會引起開發人員的不悅。
+更委婉的翻譯則以疑問的方式提出，更加尊重開發人員的專業判斷，同時也表達了對程式碼設計的疑問。
+
+建議:
+
+在程式碼審查過程中，儘量使用委婉、建設性的語言，避免直接指責或批評開發人員。
+ 
+
+## Explain Why ( 解釋為什麼 ) {#why}
 
 One thing you'll notice about the "good" example from above is that it helps the
 developer understand *why* you are making your comment. You don't always need to
@@ -40,7 +58,7 @@ include this information in your review comments, but sometimes it's appropriate
 to give a bit more explanation around your intent, the best practice you're
 following, or how your suggestion improves code health.
 
-## Giving Guidance {#guidance}
+## Giving Guidance ( 給予引導 ) {#guidance}
 
 **In general it is the developer's responsibility to fix a CL, not the
 reviewer's.** You are not required to do detailed design of a solution or write
@@ -65,7 +83,7 @@ exemplary test coverage, or you as the reviewer learned something from the CL.
 Just as with all comments, include [why](#why) you liked something, further
 encouraging the developer to continue good practices.
 
-## Label comment severity {#label-comment-severity}
+## Label comment severity ( 標籤評論嚴重性 ) {#label-comment-severity}
 
 Consider labeling the severity of your comments, differentiating required
 changes from guidelines or suggestions.
@@ -86,7 +104,7 @@ various comments. It also helps avoid misunderstandings; for example, without
 comment labels, authors may interpret all comments as mandatory, even if some
 comments are merely intended to be informational or optional.
 
-## Accepting Explanations {#explanations}
+## Accepting Explanations ( 接受解釋 ) {#explanations}
 
 If you ask a developer to explain a piece of code that you don't understand,
 that should usually result in them **rewriting the code more clearly**.
