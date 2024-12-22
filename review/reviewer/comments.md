@@ -21,6 +21,9 @@ about the *code* and never making comments about the *developer*. You don't
 always have to follow this practice, but you should definitely use it when
 saying something that might otherwise be upsetting or contentious. For example:
 
+一般而言，在審查他人的程式碼時，保持禮貌和尊重，同時也要清楚、有幫助地向開發人員提供意見是很重要的。 一種實現這一點的方法是確保您的評論始終針對程式碼本身，而不是針對開發人員。您不一定總是需要遵循這個做法，但當您要說一些可能引起不悅或爭議的話時，絕對應該使用這種方式。例如：
+
+
 Bad: "Why did **you** use threads here when there's obviously no benefit to be
 gained from concurrency?"
 
