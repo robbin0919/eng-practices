@@ -152,15 +152,26 @@ indicate that it's not mandatory for the author to resolve it in this CL.
 
 ## Principles ( 原則 ) {#principles}
 
-*   Technical facts and data overrule opinions and personal preferences.
+*   Technical facts and data overrule opinions and personal preferences.  
     技術事實和數據優先於意見和個人喜好。  
 
 *   On matters of style, the [style guide](http://google.github.io/styleguide/)
     is the absolute authority. Any purely style point (whitespace, etc.) that is
     not in the style guide is a matter of personal preference. The style should
     be consistent with what is there. If there is no previous style, accept the
-    author's.
-   在風格方面，[風格指南](http://google.github.io/styleguide/) 具有絕對權威。任何純粹的風格點（空白、等）如果不在風格指南中，則屬於個人喜好。風格應與現有風格保持一致。如果沒有先前的風格，則接受作者的風格。
+    author's.  
+   在風格方面，[風格指南](http://google.github.io/styleguide/) 具有絕對權威。任何純粹的風格點（空白、等）如果不在風格指南中，則屬於個人喜好。風格應與現有風格保持一致。如果沒有先前的風格，則接受作者的風格。  
+> 解釋:
+> * 技術事實和數據優先於意見和個人喜好:  
+> ** 這個原則強調在技術決策中，應以客觀的數據和證據為依據，而非個人主觀意見。   
+> * 在風格方面，[風格指南] 具有絕對權威:  
+> ** 強調團隊或組織內應遵循統一的程式碼風格指南，以確保程式碼的一致性和可讀性。  
+> * 任何純粹的風格點（空白、等）如果不在風格指南中，則屬於個人喜好:  
+> ** 指出如果風格指南未明確規範的細節，則屬於個人喜好，不必強求一致。  
+> * 風格應與現有風格保持一致:  
+> ** 對於已有程式碼的修改，應儘量保持原有的程式碼風格，以避免混亂。  
+> * 如果沒有先前的風格，則接受作者的風格:  
+> ** 如果程式碼尚無既定的風格，則應尊重作者的風格選擇，作為該部分程式碼的初始風格。  
 
 *   **Aspects of software design are almost never a pure style issue or just a
     personal preference.** They are based on underlying principles and should be
@@ -170,11 +181,34 @@ indicate that it's not mandatory for the author to resolve it in this CL.
     equally valid, then the reviewer should accept the preference of the author.
     Otherwise the choice is dictated by standard principles of software design.
 
+    軟體設計的方面幾乎從來都不是純粹的風格問題或僅僅是個人喜好。 它們基於底層原則，應該根據這些原則進行權衡，而不仅仅是憑藉個人意見。 有時存在幾個有效的選項。 如果作者能夠（通過數據或基於堅實的工程原理）證明幾種方法同樣有效，那麼審查者應該接受作者的偏好。 否則，選擇由軟體設計的標準原則決定。
+> 解釋:
+> * 軟體設計的方面幾乎從來都不是純粹的風格問題或僅僅是個人喜好:  
+> ** 強調軟體設計的選擇往往基於深層的設計原則，而非僅僅是個人喜好或隨意決定。  
+> * 它們基於底層原則，應該根據這些原則進行權衡:  
+> ** 指出設計決策應以軟體設計原則（如SOLID原則、設計模式等）為指導，進行合理的權衡和選擇。  
+> * 有時存在幾個有效的選項:  
+> ** 承認在某些情況下可能有多種有效的設計方案。  
+> * 如果作者能夠（通過數據或基於堅實的工程原理）證明幾種方法同樣有效，那麼審查者應該接受作者的偏好:  
+> ** 如果作者能夠提供充分的理由證明自己的選擇是合理的，審查者應尊重作者的決定。  
+> * 否則，選擇由軟體設計的標準原則決定:  
+> ** 如果無法證明其他方案的有效性，則應遵循軟體設計的標準原則進行選擇。  
+
 *   If no other rule applies, then the reviewer may ask the author to be
     consistent with what is in the current codebase, as long as that doesn't
     worsen the overall code health of the system.
+    
+如果沒有其他規則適用，則審查者可以要求作者與當前程式碼庫保持一致，只要這不會降低系統的整體程式碼健康狀況。  
 
-## Resolving Conflicts {#conflicts}
+> 解釋:  
+> * 如果沒有其他規則適用:  
+> ** 指在沒有明確的風格指南或設計原則指導的情況下。  
+> * 要求作者與當前程式碼庫保持一致:  
+> ** 建議作者遵循現有程式碼的風格和設計，以保持程式碼庫的一致性和可讀性。  
+> * 只要這不會降低系統的整體程式碼健康狀況:  
+> ** 強調保持一致性的前提是不能犧牲程式碼的品質，例如可讀性、可維護性等。
+>   
+## Resolving Conflicts ( 解決衝突 )  {#conflicts}
 
 In any conflict on a code review, the first step should always be for the
 developer and reviewer to try to come to consensus, based on the contents of
@@ -182,11 +216,29 @@ this document and the other documents in
 [The CL Author's Guide](../developer/index.md) and this
 [Reviewer Guide](index.md).
 
+在任何程式碼審查中的衝突，第一步應始終是開發人員和審查人員嘗試根據本文件以及 [The CL Author's Guide](../developer/index.md) 和此 [Reviewer Guide](index.md) 中的其他文件內容達成共識。 
+
+> 解釋:  
+> * 衝突 (conflict)： 指開發人員和審查人員對於程式碼的改動或審查意見存在分歧的情況。  
+> * 共識 (consensus)： 指雙方就程式碼的修改達成一致意見。  
+> * [The CL Author's Guide] 和 [Reviewer Guide]： 應替換為實際的文件名稱或連結。  
+> 這段話強調了在程式碼審查中，溝通和協商的重要性。 遇到衝突時，雙方應該首先嘗試通過溝通和討論，基於共同的原則和指南，找到一個雙方都能接受的解決方案。  
+
 When coming to consensus becomes especially difficult, it can help to have a
 face-to-face meeting or a video conference between the reviewer and the author, instead of
 just trying to resolve the conflict through code review comments. (If you do
 this, though, make sure to record the results of the discussion as a comment on
 the CL, for future readers.)
+
+當達成共識變得特別困難時，讓審查者和作者進行面對面會議或視訊會議，而不是僅僅嘗試通過程式碼審查評論來解決衝突，這可能會有幫助。（但是，如果這樣做，請務必將討論結果記錄為 CL 上的評論，以供未來讀者參考。）  
+
+> 解釋:  
+> * face-to-face meeting： 面對面會議。  
+> * video conference： 視訊會議。  
+> * resolve the conflict： 解決衝突。  
+> * code review comments： 程式碼審查評論。  
+> * record the results of the discussion： 記錄討論結果。  
+> 這段話建議，當程式碼審查中遇到難以解決的衝突時，可以考慮通過面對面或視訊會議的方式進行溝通，以更有效地解決問題。同時強調了將會議的結果記錄在 CL 上的重要性，以便其他開發人員和未來的讀者能夠了解相關的討論和決策過程。  
 
 If that doesn't resolve the situation, the most common way to resolve it would
 be to escalate. Often the
@@ -195,4 +247,12 @@ for a decision from a maintainer of the code, or asking an Eng Manager to help
 out. **Don't let a CL sit around because the author and the reviewer can't come
 to an agreement.**
 
+如果這樣還無法解決問題，最常見的解決方法是升級。 通常，升級路徑是進行更廣泛的團隊討論，徵求技術主管的意見，要求程式碼維護者做出決定，或請工程經理協助。 不要讓一個 CL 停滯不前，因為作者和審查者無法達成一致意見。
+
+> 解釋:  
+> * escalate： 升級，指將問題提交給更高層級的人員或團隊進行解決。  
+> * Technical Lead： 技術主管，通常是指具有豐富經驗和技術領導能力的工程師。  
+> * maintainer of the code： 程式碼維護者，通常是指對特定模組或系統擁有維護權限的工程師。  
+> * Eng Manager： 工程經理，負責管理工程團隊的經理。  
+> 這段話強調了當程式碼審查中遇到無法解決的衝突時，應該採取積極的措施進行升級，例如尋求團隊領導、維護者或工程經理的協助。 避免讓 CL 因為審查意見分歧而長時間停滯不前，影響開發進度。  
 Next: [What to look for in a code review](looking-for.md)
