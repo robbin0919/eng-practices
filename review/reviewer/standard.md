@@ -24,7 +24,13 @@ In order to accomplish this, a series of trade-offs have to be balanced.
 First, developers must be able to _make progress_ on their tasks. If you never
 submit an improvement to the codebase, then the codebase never improves. Also,
 if a reviewer makes it very difficult for _any_ change to go in, then developers
-are disincentivized to make improvements in the future.
+are disincentivized to make improvements in the future.   
+首先，開發人員必須能夠推進他們的任務。如果從不提交對程式碼庫的改進，那麼程式碼庫就不會進步。此外，如果審查人員使得任何更改都很難通過，那麼開發人員將失去未來做出改進的動力。
+
+> 解釋：  
+> make progress： 翻譯為「推進」，強調開發人員在工作進度上的持續前進。  
+> disincentivized： 翻譯為「失去動力」，指開發人員由於審查過程過於嚴格或困難，而感到沮喪或失去改進程式碼的積極性。  
+> 這段話強調了程式碼審查的目標之一是促進程式碼的持續改進，因此需要在審查過程中保持合理的平衡，既要保證程式碼品質，又要鼓勵開發人員積極提交改進。  
 
 On the other hand, it is the duty of the reviewer to make sure that each CL is
 of such a quality that the overall code health of their codebase is not
