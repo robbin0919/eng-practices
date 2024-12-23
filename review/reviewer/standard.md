@@ -115,16 +115,23 @@ choose to ignore.
 
 審查人員應該隨時可以留下評論，表示某個地方可以做得更好，但如果它不是很重要，可以在前面加上「Nit: 」之類的前綴，讓作者知道這只是一點點的修飾，他們可以選擇忽略。  
 
-解釋:  
+> 解釋:  
 > * Nit: 如前所述，Nit 指的是程式碼中一個微小的、不影響程式功能，但可能影響可讀性、一致性或未來維護性的細節。
 > * prefix： 前綴，指在文字的前面加上特定的字元或詞語。
 > 這段話強調了即使是微小的細節，審查人員也可以提出建議，但同時也尊重開發人員的自主權，讓他們可以選擇是否採納這些建議。
 
 Note: Nothing in this document justifies checking in CLs that definitely
 _worsen_ the overall code health of the system. The only time you would do that
-would be in an [emergency](../emergencies.md).
+would be in an [emergency](../emergencies.md).  
 
-## Mentoring
+注意：本文件中的任何內容都不足以證明可以簽入（check in）肯定會降低系統整體程式碼健康狀況的 CL。 只有在緊急情況下才應該這樣做。  
+> 解釋:  
+> * check in： 簽入，指將程式碼修改提交到程式碼庫的動作。  
+> * orsen： 惡化，指使程式碼品質下降。  
+> 這段話強調了程式碼審查的底線：絕對不能簽入會降低系統程式碼健康狀況的 CL。  
+> 只有在極端緊急的情況下，例如系統出現嚴重故障、需要立即修復時，才可能做出這樣的例外。  
+
+## Mentoring ( 指導 ) 
 
 Code review can have an important function of teaching developers something new
 about a language, a framework, or general software design principles. It's
@@ -134,15 +141,26 @@ in mind that if your comment is purely educational, but not critical to meeting
 the standards described in this document, prefix it with "Nit: " or otherwise
 indicate that it's not mandatory for the author to resolve it in this CL.
 
-## Principles {#principles}
+程式碼審查可以扮演重要的角色，教導開發人員有關語言、框架或一般軟體設計原則的新知識。 留下有助於開發人員學習新知識的評論總是好的。 分享知識是隨著時間推移改善系統程式碼健康狀況的一部分。 只要記住，如果您的評論純粹是為了教育目的，但對於滿足本文所述的標準並不關鍵，請在前面加上「Nit: 」或以其他方式表明作者不必在這個 CL 中解決它。  
+
+> 解釋:
+> * Mentoring (指導)： 強調程式碼審查不僅僅是發現問題，還應該起到指導和教育的作用。  
+> * Sharing knowledge (分享知識)： 透過程式碼審查，經驗豐富的審查者可以將自己的知識和經驗傳授給其他開發人員，提升團隊的整體技術水平。  
+> * purely educational (純粹是為了教育目的)： 指評論的目的是幫助開發人員學習，而非解決當前的程式碼問題。  
+> * not mandatory (不必強制)： 強調這些教育性的評論不是必須要修改的，開發人員可以根據自己的時間和情況選擇是否採納。  
+這段話說明了程式碼審查不僅僅是為了發現和糾正錯誤，還應該成為一個學習和成長的平台。 審查者應該善於利用這個機會，傳授自己的經驗和知識，幫助團隊不斷提高。
+
+## Principles ( 原則 ) {#principles}
 
 *   Technical facts and data overrule opinions and personal preferences.
+    技術事實和數據優先於意見和個人喜好。  
 
 *   On matters of style, the [style guide](http://google.github.io/styleguide/)
     is the absolute authority. Any purely style point (whitespace, etc.) that is
     not in the style guide is a matter of personal preference. The style should
     be consistent with what is there. If there is no previous style, accept the
     author's.
+   在風格方面，[風格指南](http://google.github.io/styleguide/) 具有絕對權威。任何純粹的風格點（空白、等）如果不在風格指南中，則屬於個人喜好。風格應與現有風格保持一致。如果沒有先前的風格，則接受作者的風格。
 
 *   **Aspects of software design are almost never a pure style issue or just a
     personal preference.** They are based on underlying principles and should be
