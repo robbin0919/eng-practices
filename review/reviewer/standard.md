@@ -52,6 +52,15 @@ reviewing. They want to ensure that the codebase stays consistent, maintainable,
 and all of the other things mentioned in
 ["What to look for in a code review."](looking-for.md)
 
+此外，審查人員對他們正在 code review 擁有權限和責任。他們希望確保程式碼庫保持一致性、可維護性，以及「 code review 中應關注的事項」中提到的所有其他方面。  
+
+> 解釋:  
+> ownership and responsibility： 翻譯為「擁有權限和責任」，強調審查人員在程式碼品質方面扮演的重要角色。  
+> consistent： 一致的，指程式碼風格、命名規則、設計模式等方面的一致性。  
+> maintainable： 可維護的，指程式碼易於理解、修改和擴展。  
+> "What to look for in a code review."： 指程式碼審查中應關注的事項，例如可讀性、正確性、性能、安全性、可測試性等。  
+> 這段話進一步強調了審查人員在維護程式碼庫品質方面的責任。他們不僅僅是發現問題，更應該積極參與到程式碼的改進過程中，確保程式碼庫符合團隊的標準和要求。  
+
 Thus, we get the following rule as the standard we expect in code reviews:
 
 **In general, reviewers should favor approving a CL once it is in a state where
@@ -59,11 +68,29 @@ it definitely improves the overall
 code health of the system
 being worked on, even if the CL isn't perfect.**
 
+因此，我們得到以下規則作為我們在程式碼審查中所期望的標準：  
+一般而言，審查人員應該傾向於批准一個 CL，只要它處於 顯著改善正在開發的系統的整體程式碼健康狀況 的狀態，即使該 CL 尚未完美。  
+
+> 解釋:  
+> CL (Change List)： 程式碼變更集，即一次提交的一組程式碼修改。  
+> code health： 程式碼健康狀況，如前面解釋，是指程式碼的品質，包括可讀性、可維護性、可測試性、性能、安全性等方面。  
+> 這段話強調了程式碼審查的最終目標：提升系統的整體程式碼健康狀況。
+> 
+> 在實際審查過程中，審查人員應該以這個目標為導向，重點關注 CL 是否對系統的整體健康狀況有顯著的提升，而不是過於糾結於一些細枝末節的完美主義。
+
 That is _the_ senior principle among all of the code review guidelines.
+那是所有程式碼審查指南中最重要的原則。  
 
 There are limitations to this, of course. For example, if a CL adds a feature
 that the reviewer doesn't want in their system, then the reviewer can certainly
 deny approval even if the code is well-designed.
+
+當然，這也有其局限性。例如，如果一個 CL 添加了審查人員不希望在其系統中出現的功能，那麼審查人員當然可以拒絕批准，即使程式碼設計良好。  
+
+> 解釋:  
+> the senior principle： 強調這個原則在所有程式碼審查指南中的重要性和優先級。  
+> limitations： 局限性，指這個原則並非在所有情況下都絕對適用。  
+> 這段話說明了雖然「提升系統的整體程式碼健康狀況」是最重要的原則，但並非絕對的。審查人員仍有權力根據專案的需求和目標，對 CL 進行合理的拒絕。  
 
 A key point here is that there is no such thing as "perfect" code&mdash;there is
 only _better_ code. Reviewers should not require the author to polish every tiny
@@ -73,6 +100,13 @@ are suggesting. Instead of seeking perfection, what a reviewer should seek is
 _continuous improvement_. A CL that, as a whole, improves the maintainability,
 readability, and understandability of the system shouldn't be delayed for days
 or weeks because it isn't "perfect."
+
+關鍵點在於，不存在「完美」的程式碼——只有「更好」的程式碼。 審查人員不應該要求作者在批准之前將 CL 的每個小細節都拋光。相反，審查人員應該平衡前進的需要與他們所建議的更改的重要性。 審查人員應該追求的是「持續改進」，而不是追求完美。 一個整體上提高了系統的可維護性、可讀性和可理解性的 CL 不應該因為不「完美」而被延誤幾天或幾週。
+> 解釋：  
+> * "perfect" code： 完美程式碼，強調不存在絕對完美的程式碼。  
+> * polish： 拋光，比喻對程式碼進行細微的調整和改進。  
+> * continuous improvement： 持續改進，強調程式碼品質的逐步提升，而非一次性達到完美。  
+> 這段話強調了程式碼審查的重點應該是促進程式碼的持續改進，而不是追求理想化的「完美」。過度追求完美可能會阻礙開發進度，降低團隊的工作效率。  
 
 Reviewers should _always_ feel free to leave comments expressing that something
 could be better, but if it's not very important, prefix it with something like
