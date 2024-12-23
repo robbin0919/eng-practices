@@ -1,10 +1,10 @@
-# What to look for in a code review
-
-
+# What to look for in a code review ( 程式碼審查中應關注的事項 ) 
 
 Note: Always make sure to take into account
 [The Standard of Code Review](standard.md) when considering each of these
-points.
+points.  
+
+注意：在考慮這些點時，務必始終考慮[The Standard of Code Review](standard.md) 。   
 
 ## Design
 
