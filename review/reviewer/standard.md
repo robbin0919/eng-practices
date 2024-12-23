@@ -19,7 +19,7 @@ In order to accomplish this, a series of trade-offs have to be balanced.
 > * 速度與品質: 快速審查可能導致遺漏問題，而過於嚴格的審查可能會降低開發效率。  
 > * 自動化與人工審查: 自動化工具可以提高效率，但無法完全取代人工審查。  
 > * 個人風格與團隊標準: 允許個人風格可以提高創造力，但統一的風格可以提高可讀性和維護性。  
-因此，在實踐中需要根據實際情況，找到一個最佳的平衡點。  
+因此，在實踐中需要根據實際情況，找到一個最佳的平衡點。   
 
 First, developers must be able to _make progress_ on their tasks. If you never
 submit an improvement to the codebase, then the codebase never improves. Also,
@@ -38,6 +38,14 @@ decreasing as time goes on. This can be tricky, because often, codebases degrade
 through small decreases in code health over time, especially when a team is
 under significant time constraints and they feel that they have to take
 shortcuts in order to accomplish their goals.
+
+另一方面，審查人員有責任確保每個 CL（Change List）的品質，以防止程式碼庫的整體健康狀況隨著時間的推移而下降。這可能很棘手，因為程式碼庫通常會隨著時間的推移而逐漸降低健康狀況，尤其是在團隊承受著巨大的時間壓力，並且他們覺得必須採取捷徑來實現目標的情況下。  
+
+> 解釋:  
+> CL (Change List)： 指程式碼變更集，即一次提交的一組程式碼修改。  
+> code health： 程式碼健康狀況，如前面解釋，是指程式碼的品質，包括可讀性、可維護性、可測試性、性能、安全性等方面。  
+> degrade： 逐漸惡化、退化。  
+> 這段話強調了審查人員在維護程式碼庫健康狀況方面的責任。即使開發人員面臨時間壓力，審查人員也應該堅持一定的品質標準，避免短期的捷徑導致長期的負面影響。  
 
 Also, a reviewer has ownership and responsibility over the code they are
 reviewing. They want to ensure that the codebase stays consistent, maintainable,
