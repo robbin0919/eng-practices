@@ -1,4 +1,4 @@
-# The Standard of Code Review
+# The Standard of Code Review （ code review 的標準 )
 
 
 
@@ -6,6 +6,12 @@ The primary purpose of code review is to make sure that the overall
 code health of Google's code
 base is improving over time. All of the tools and processes of code review are
 designed to this end.
+
+code review 的主要目的是確保 Google 程式碼庫的整體程式碼健康狀況隨著時間推移而持續改善。所有 code review 的工具和流程都是為了實現這個目標而設計的。
+
+> 程式碼健康狀況 (code health)： 泛指程式碼的品質，包括可讀性、可維護性、可測試性、性能、安全性等方面。  
+> 程式碼庫 (code base)： 指一個軟體專案中所有源程式碼的集合。  
+> 這段話強調了程式碼審查的核心價值：提升程式碼品質，確保軟體系統的長期可維護性和穩定性。  
 
 In order to accomplish this, a series of trade-offs have to be balanced.
 
