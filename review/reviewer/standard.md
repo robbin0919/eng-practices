@@ -13,7 +13,13 @@ code review 的主要目的是確保 Google 程式碼庫的整體程式碼健康
 > * 程式碼庫 (code base)： 指一個軟體專案中所有源程式碼的集合。  
 > 這段話強調了程式碼審查的核心價值：提升程式碼品質，確保軟體系統的長期可維護性和穩定性。  
 
-In order to accomplish this, a series of trade-offs have to be balanced.
+In order to accomplish this, a series of trade-offs have to be balanced.  
+為了實現這個目標，必須平衡一系列的權衡取捨。  
+> 在程式碼審查過程中，需要在不同因素之間進行平衡，例如：  
+> * 速度與品質: 快速審查可能導致遺漏問題，而過於嚴格的審查可能會降低開發效率。  
+> * 自動化與人工審查: 自動化工具可以提高效率，但無法完全取代人工審查。  
+> * 個人風格與團隊標準: 允許個人風格可以提高創造力，但統一的風格可以提高可讀性和維護性。  
+因此，在實踐中需要根據實際情況，找到一個最佳的平衡點。  
 
 First, developers must be able to _make progress_ on their tasks. If you never
 submit an improvement to the codebase, then the codebase never improves. Also,
