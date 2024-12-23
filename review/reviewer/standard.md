@@ -113,6 +113,13 @@ could be better, but if it's not very important, prefix it with something like
 "Nit: " to let the author know that it's just a point of polish that they could
 choose to ignore.
 
+審查人員應該隨時可以留下評論，表示某個地方可以做得更好，但如果它不是很重要，可以在前面加上「Nit: 」之類的前綴，讓作者知道這只是一點點的修飾，他們可以選擇忽略。  
+
+解釋:  
+> * Nit: 如前所述，Nit 指的是程式碼中一個微小的、不影響程式功能，但可能影響可讀性、一致性或未來維護性的細節。
+> * prefix： 前綴，指在文字的前面加上特定的字元或詞語。
+> 這段話強調了即使是微小的細節，審查人員也可以提出建議，但同時也尊重開發人員的自主權，讓他們可以選擇是否採納這些建議。
+
 Note: Nothing in this document justifies checking in CLs that definitely
 _worsen_ the overall code health of the system. The only time you would do that
 would be in an [emergency](../emergencies.md).
