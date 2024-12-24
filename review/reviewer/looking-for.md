@@ -6,14 +6,29 @@ points.
 
 注意：在考慮這些點時，務必始終考慮[The Standard of Code Review](standard.md) 。   
 
-## Design
+## Design ( 設計 )
 
 The most important thing to cover in a review is the overall design of the CL.
 Do the interactions of various pieces of code in the CL make sense? Does this
 change belong in your codebase, or in a library? Does it integrate well with the
 rest of your system? Is now a good time to add this functionality?
+正體中文翻譯:
 
-## Functionality
+在審查中，最重要的是檢查 CL 的整體設計。  
+
+CL 中不同部分的程式碼交互是否合理？  
+這個變更應該屬於您的程式碼庫還是庫？  
+它是否與系統的其餘部分良好整合？  
+現在是否適合添加此功能？  
+解釋: 
+
+CL： 程式碼變更集（Change List），即一次提交的一組程式碼修改。  
+整體設計： 指程式碼的架構、設計模式、模組化等方面的整體規劃。  
+交互： 指不同程式碼部分之間的關係和影響。  
+程式碼庫： 存放專案所有原始碼的地方。  
+整合： 指新加入的程式碼與現有系統的兼容性和協同性。  
+
+## Functionality ( 功能性 )
 
 Does this CL do what the developer intended? Is what the developer intended good
 for the users of this code? The "users" are usually both end-users (when they
