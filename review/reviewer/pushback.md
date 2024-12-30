@@ -28,7 +28,7 @@ additional information about why the change is being requested.
 
 然而，開發人員並不總是正確的。 在這種情況下，審查者應該進一步解釋為什麼他們認為自己的建議是正確的。 一個好的解釋既要表明對開發人員回覆的理解，又要提供有關為何要求進行此更改的更多資訊。  
 >  筆記：
->  1. 在code reviews中，審查者不僅要提出自己的意見，還需要能夠清楚地解釋和論證自己的觀點，以說服開發人員並促進有效的溝通。
+>  1. 在 code reviews 中，審查者不僅要提出自己的意見，還需要能夠清楚地解釋和論證自己的觀點，以說服開發人員並促進有效的溝通。
 >  2. 提供更多關於為何要求進行此更改的資訊，例如：
 >     *  符合團隊的程式碼風格指南
 >     *  提高程式碼的可讀性、可維護性或可測試性
@@ -40,6 +40,12 @@ In particular, when the reviewer believes their suggestion will improve code
 health, they should continue to advocate for the change, if they believe the
 resulting code quality improvement justifies the additional work requested.
 **Improving code health tends to happen in small steps.**
+
+特別是，當 reviewer 認為他們的建議將改善程式碼健康狀況時，如果他們認為所得到的程式碼品質改進證明了所要求的額外工作是合理的，則他們應該繼續倡導該更改。  
+** 程式碼健康的提升往往需要一點一滴地累積 **
+> 筆記：
+> 在 code reviews 中，reviewer 對於提升程式碼品質的責任。 如果 reviewer 認為某個修改對於提升程式碼健康狀況至關重要，即使開發人員有不同的意見， reviewer 也應該繼續堅持自己的觀點，並向開發人員充分解釋修改的必要性和重要性。  
+> 需要注意的是: 即使 reviewer 認為自己的建議是正確的，也應該保持禮貌和尊重，避免與開發人員發生爭執。 溝通和協商是解決程式碼審查中分歧的關鍵。  
 
 Sometimes it takes a few rounds of explaining a suggestion before it really
 sinks in. Just make sure to always stay [polite](comments.md#courtesy) and let
