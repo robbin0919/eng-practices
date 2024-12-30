@@ -18,12 +18,23 @@ let them know that they are right and let the issue drop.
 
 當開發人員不同意您的建議時，請先花點時間考慮他們是否正確。 通常，他們比您更接近程式碼，因此他們可能確實對某些方面有更好的洞察力。 他們的論點是否有道理？ 從程式碼健康的角度來看是否有意義？ 如果是這樣，請讓他們知道他們是對的，並讓這個問題過去。  
 
-> 在程式碼審查過程中，保持開放的心態的重要性。 審查者應該尊重開發人員的專業意見，並願意承認自己的錯誤。 如果開發人員的論點合理且符合程式碼健康原則，審查者應該欣然接受並放下自己的堅持。
+> 筆記：  
+> 在程式碼審查過程中，保持開放的心態的重要性。 審查者應該尊重開發人員的專業意見，並願意承認自己的錯誤。 如果開發人員的論點合理且符合程式碼健康原則，審查者應該欣然接受並放下自己的堅持。  
 
 However, developers are not always right. In this case the reviewer should
 further explain why they believe that their suggestion is correct. A good
 explanation demonstrates both an understanding of the developer's reply, and
 additional information about why the change is being requested.
+
+然而，開發人員並不總是正確的。 在這種情況下，審查者應該進一步解釋為什麼他們認為自己的建議是正確的。 一個好的解釋既要表明對開發人員回覆的理解，又要提供有關為何要求進行此更改的更多資訊。  
+>  筆記：
+>  1. 在code reviews中，審查者不僅要提出自己的意見，還需要能夠清楚地解釋和論證自己的觀點，以說服開發人員並促進有效的溝通。
+>  2. 提供更多關於為何要求進行此更改的資訊，例如：
+>     *  符合團隊的程式碼風格指南
+>     *  提高程式碼的可讀性、可維護性或可測試性
+>     *  避免潛在的問題或風險
+>     *  符合系統的設計原則  
+
 
 In particular, when the reviewer believes their suggestion will improve code
 health, they should continue to advocate for the change, if they believe the
