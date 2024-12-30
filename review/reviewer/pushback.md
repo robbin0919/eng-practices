@@ -1,10 +1,12 @@
-# Handling pushback in code reviews
+# Handling pushback in code reviews (處理code reviews中的反饋,處理反對意見或應對阻力)
 
 
 
 Sometimes a developer will push back on a code review. Either they will disagree
 with your suggestion or they will complain that you are being too strict in
 general.
+
+有時候，開發人員會對程式碼審查提出反對意見。 他們可能會不同意您的建議，或者抱怨您過於嚴格。 
 
 ## Who is right? {#who_is_right}
 
