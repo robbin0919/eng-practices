@@ -8,13 +8,17 @@ general.
 
 有時候，開發人員會對程式碼審查提出反對意見。 他們可能會不同意您的建議，或者抱怨您過於嚴格。 
 
-## Who is right? {#who_is_right}
+## Who is right? (誰是對的？) {#who_is_right}
 
 When a developer disagrees with your suggestion, first take a moment to consider
 if they are correct. Often, they are closer to the code than you are, and so
 they might really have a better insight about certain aspects of it. Does their
 argument make sense? Does it make sense from a code health perspective? If so,
-let them know that they are right and let the issue drop.
+let them know that they are right and let the issue drop.  
+
+當開發人員不同意您的建議時，請先花點時間考慮他們是否正確。 通常，他們比您更接近程式碼，因此他們可能確實對某些方面有更好的洞察力。 他們的論點是否有道理？ 從程式碼健康的角度來看是否有意義？ 如果是這樣，請讓他們知道他們是對的，並讓這個問題過去。  
+
+> 在程式碼審查過程中，保持開放的心態的重要性。 審查者應該尊重開發人員的專業意見，並願意承認自己的錯誤。 如果開發人員的論點合理且符合程式碼健康原則，審查者應該欣然接受並放下自己的堅持。
 
 However, developers are not always right. In this case the reviewer should
 further explain why they believe that their suggestion is correct. A good
